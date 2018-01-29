@@ -29,3 +29,4 @@ export default function defineTraining(sequelize: Sequelize.Sequelize, DataTypes
         });
     return training;
 };
+

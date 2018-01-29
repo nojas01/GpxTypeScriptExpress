@@ -6,5 +6,5 @@ const sequelize = new Sequelize(config.database, config.username, config.passwor
 
 
 sequelize.query("SELECT avg(cadance) FROM trainings", { type: Sequelize.QueryTypes.SELECT })
-    .then((avg) => console.log(avg))
-    .catch((error) => console.log(error))
+    .then((avg:number) => console.log(avg))
+    .catch((error:string) => console.log(error))
